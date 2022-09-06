@@ -1,0 +1,3 @@
+app_SyOne:
+    path: /SyOne
+    controller: App\Controller\UziController::new

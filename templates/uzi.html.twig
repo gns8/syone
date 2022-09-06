@@ -1,0 +1,41 @@
+{# templates/uzi.html.twig #}
+
+{{ form_start(form) }}
+   
+<div class="row">
+    <div class="col" id="id_head"> Kapcsolatfelvételi űrlap</div>
+</div>
+
+    <div class="row">
+        <div class="col" id="id_neved">
+            {{ form_row(form.neved, { 'label': 'Neved: ',
+                'attr': {'oninvalid': "setCustomValidity('Hiba! Kérjük töltsd ki az összes mezőt!')"}
+                }) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="id_emailcimed">
+            {{ form_row(form.emailcimed, { 'label': 'E-mail címed: ',
+                'attr': {'oninvalid': "setCustomValidity('Hiba! Kérjük töltsd ki az összes mezőt!')"}
+                }) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="id_uzeneted">
+            {{ form_row(form.uzeneted, { 'label': 'Üzenet szövege: ',
+                'attr': {'oninvalid': "setCustomValidity('Hiba! Kérjük töltsd ki az összes mezőt!')"}
+                }) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="id_submit">
+            {{ form_row(form.submit, { 'label': 'Küldés' }) }}
+        </div>
+    </div>
+
+{{ form_end(form) }}
+
+
